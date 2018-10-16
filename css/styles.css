@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+    }
+
+.svg-wrap,
+.svg-wrap-1,
+.svg-wrap-2 {
+  display: grid;
+  margin-top: 20px;
+  width: 300px;
+}
+.svg-wrap-2 {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width : 900px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .svg-wrap,
+  .svg-wrap-1,
+  .svg-wrap-2 {
+    width: 100%;
+  }
+
+}
